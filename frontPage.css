@@ -77,10 +77,13 @@ nav ul li a:hover, nav ul li a:focus{
 	padding: 5px 5px;
 }
 
-#anchor ul li: after{
-	
+#anchor ul li a{
+	text-decoration: none;
 }
 
+#anchor ul li a:hover, #anchor ul li a:focus{
+	text-decoration: underline;
+}
 
 #donate{
 	float: right;
@@ -193,6 +196,7 @@ nav ul li a:hover, nav ul li a:focus{
 
 #historyContainer ul > li{
 	list-style: none;
+	padding-bottom: 15px;
 }
 
 #memeNews{
