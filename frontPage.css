@@ -1,10 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    border: 0;
-    outline: 0;
-    vertical-align: baseline;
-    background: transparent;
 }
 
 html{
@@ -15,10 +11,6 @@ body{
 	margin: 0px auto;
 	font-family: "Comic Sans MS", cursive;
 	background-color: lightgray;
-}
-
-header{
-
 }
 
 header{
@@ -75,13 +67,27 @@ nav ul li a:hover, nav ul li a:focus{
 	text-decoration: underline;
 }
 
+#anchor{
+	float: left;
+	width: 170px;
+	border: 5px solid black;
+	border-left: 0px;
+	border-top: 0px;
+	background-color: white;
+	padding: 5px 5px;
+}
+
+#anchor ul li: after{
+	
+}
+
+
 #donate{
 	float: right;
 	width: 170px;
 	border: 5px solid black;
 	border-right: 0px;
 	border-radius: 10px 0px 0px 10px;
-	margin-left: 20px;
 	margin-top: 20px;
 	background-color: white;
 	padding: 5px 5px;
@@ -91,22 +97,15 @@ nav ul li a:hover, nav ul li a:focus{
 	text-decoration: underline;
 }
 
-#anchor{
-	float: left;
-	width: 170px;
-	border-left: 0px;
-	border: 5px solid black;
-	margin-right: 50px;
-	background-color: white;
-	padding: 5px 5px;
-}
-
 #content{
 	margin-top: 20px;
+	margin-left: 185px;
+	margin-right: 185px;
+	padding: 0 5%;
 }
 
 #dailyMeme{
-	width: 30%;
+	max-width: 450px;
 	float: left;
 }
 
@@ -123,6 +122,7 @@ nav ul li a:hover, nav ul li a:focus{
 	border-radius: 10px;
 	background-color: #fffdba;
 	font-size: 14px;
+	height: 320px;
 }
 
 #dailyImg{
@@ -138,9 +138,8 @@ nav ul li a:hover, nav ul li a:focus{
 }
 
 #trendingMemes{
-	width: 33%;
-	float: left;
-	padding-left: 100px;
+	width: 450px;
+	float: right;
 }
 
 #trendingPepe{
@@ -164,10 +163,57 @@ nav ul li a:hover, nav ul li a:focus{
 	border-radius: 10px;
 	background-color: #baffbd;
 	padding-left: 20px;
+	height: 320px;
 }
 
 #trendingContainer ol li{
 	padding-bottom: 10px;
+}
+
+#memeHistory{
+	padding-top: 20px;
+	float: left;
+	max-width: 450px;
+}
+
+#historyContainer{
+	border: 5px solid #ba9d55;
+	background-color: #e5c990;
+	border-radius: 10px;
+	height: 320px;
+}
+
+#historyTitle{
+	text-align: center;
+	border: 5px solid #ba9d55;
+	border-radius: 10px;
+	background-color: #e5c990;
+	margin-bottom: 10px;
+}
+
+#historyContainer ul > li{
+	list-style: none;
+}
+
+#memeNews{
+	padding-top: 20px;
+	max-width: 450px;
+	float: right;
+}
+
+#newsContainer{
+	border: 5px solid red;
+	background-color: #e86868;
+	border-radius: 10px;
+	height: 320px;
+}
+
+#newsTitle{
+	text-align: center;
+	border: 5px solid red;
+	border-radius: 10px;
+	background-color: #e86868;
+	margin-bottom: 10px;
 }
 
 .bold{
