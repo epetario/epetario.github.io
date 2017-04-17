@@ -1,82 +1,10 @@
 /*
-    Script name: meme.js
+    Script name: setMeme.js
     Description: Used to alter the contents of the meme.html page to suit the meme selected
     Author: Ednest Petario
     Date Created: April 16, 2017
 */
-
-
-function confessBear(){
-	sessionStorage.removeItem("meme");
-
-	document.getElementById("name").innerHTML = "Confession Bear";
-}
-
-function blink(){
-	sessionStorage.removeItem("meme");
-
-	document.getElementById("name").innerHTML = "Drew Scanlon";
-}
-
-function doge(){
-	sessionStorage.removeItem("meme");
-
-	document.getElementById("name").innerHTML = "Doge";
-}
-
-function exBrain(){
-	sessionStorage.removeItem("meme");
-
-	document.getElementById("name").innerHTML = "Expanding Brain";
-}
-
-function feelsBad(){
-	sessionStorage.removeItem("meme");
-
-	document.getElementById("name").innerHTML = "FeelsBadMan";
-}
-
-function goodGuy(){
-	sessionStorage.removeItem("meme");
-
-	document.getElementById("name").innerHTML = "Good Guy Greg";
-}
-
-function dump(){
-	sessionStorage.removeItem("meme");
-	
-	document.getElementById("name").innerHTML = "Meme Dumps";
-}
-
-function think(){
-	sessionStorage.removeItem("meme");
-	document.getElementById("name").innerHTML = "Roll Safe";
-}
-
-function sponge(){
-	sessionStorage.removeItem("meme");
-	document.getElementById("name").innerHTML = "SpongeBob Memes";
-}
-
-function troll(){
-	sessionStorage.removeItem("meme");
-	document.getElementById("name").innerHTML = "TrollFace";
-}
-
-function puffin(){
-	sessionStorage.removeItem("meme");
-	document.getElementById("name").innerHTML = "UnPopular Opinion Puffin";
-}
-
-function zerg(){
-	sessionStorage.removeItem("meme");
-	document.getElementById("name").innerHTML = "Zerg Rush";
-}
-
 function load() {
-	var x = sessionStorage.getItem("meme");
-	window[x]();
-
 	document.getElementById("confessBear").addEventListener("click", function(){sessionStorage.setItem("meme", "confessBear");}, false);
 	document.getElementById("blink").addEventListener("click", function(){sessionStorage.setItem("meme", "blink");}, false);
 	document.getElementById("doge").addEventListener("click", function(){sessionStorage.setItem("meme", "doge");}, false);
