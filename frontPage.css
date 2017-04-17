@@ -220,6 +220,41 @@ nav ul li a:hover, nav ul li a:focus{
 	margin-bottom: 10px;
 }
 
+footer{
+	clear:both;
+	padding-top: 30px;
+	margin-left: 35%;
+}
+
+footer ul li{
+	display: inline-block;
+	text-align: center;
+	font-size: 12px;
+	font-weight: 300;
+}
+
+footer ul li a{
+	color: #3d3e3f;
+	text-decoration: none;
+	margin: 0px auto;
+}
+
+footer ul li:after{
+	padding: 8px;
+	font-weight: 100;
+	content: "|";
+	color: black;
+	font-weight: 100px;
+}
+
+footer ul li:last-of-type:after{
+	content:"";
+}
+
+footer ul li a:hover, footer ul li a:focus{
+	text-decoration: underline;
+}
+
 .bold{
 	font-weight: bolder;
 	text-decoration: underline;
