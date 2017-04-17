@@ -122,7 +122,18 @@ nav ul li a:hover, nav ul li a:focus{
 }
 
 #memeDescription{
-	float: right;
+	float: right;	
+}
+
+#memeTitle{
+	border: 3px solid gold;
+	background-color: #fffdba;
+	border-radius: 6px;
+	margin: 5px;
+	text-align: center;
+}
+
+#asideContainer{
 	border: 3px solid gold;
 	background-color: #fffdba;
 	border-radius: 6px;
@@ -147,6 +158,11 @@ nav ul li a:hover, nav ul li a:focus{
 	width: 200px;
 	height: 200px;
 	padding: 5px;
+}
+
+#memeImage{
+	display: block;
+	margin: 0 auto;
 }
 
 footer{

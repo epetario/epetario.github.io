@@ -7,26 +7,50 @@
 
 
 function confessBear(){
+
 	var image = document.getElementById("memeImage");
 	image.setAttribute("src", "images/confessBear.jpg");
+
 	document.getElementById("name").innerHTML = "Confession Bear";
 	document.getElementById("summary").innerHTML =  "Confession Bear is an advice animal image macro series featuring a photo of a Malayan sun bear leaning against a log." +
 	" The pictures are inscribed with admissions about unthinkable practices and questionable assessments that are frequently kept mystery because of a paranoid fear of being segregated.";
 	document.getElementById("creation").innerHTML = "The original bear photo (shown below, left) was taken by photojournalist Clemens Bilan and was submitted to the stock photo website Getty Images on April 12th, 2007. Several years later on June 21st, 2012, Redditor F-18Bro submitted a post titled \“I have a lot of weird stuff that I’d like to b able to confess to reddit so i can get it off my chest, so I made Confession Bear\”. The post was well received and garnered thousands of upvotes, birthing the meme as we know it today.";
+	document.getElementById("eco").innerHTML = "The trend of the Confession Bear meme is going down, as confessions now a days can easily be traced to the person who made the confession. Some confessions can also be illegal or crime related, only leading to the arrest of the confessor. Most confessions though are usually down voted for they are more like whining and complaining, than an actual confession truly worthy of Confession Bear."
 
-	var div = document.getElementById("content");
+	document.getElementById("memeTitle").innerHTML = "Confession Bear";
+	document.getElementById("memeBorn").innerHTML = "Born: June 21, 2012";
+	document.getElementById("memeUsed").innerHTML = "Usability: Declining";
+	document.getElementById("memeFreq").innerHTML = "Frequently used during: April 2013";
+	document.getElementById("memeOrigin").innerHTML = "Origin: Clemens Bilan April 12, 2007";
 
-	for(var i = 0; i < 3; i++)
-	{
-		var img = document.createElement("img");
-		img.setAttribute("src","images/confessBear" + i + ".jpg");
-		img.setAttribute("alt", "Confession Bear" + i);
-		div.appendChild(img);
-	}
+	var img = document.getElementById("img0");
+	img.setAttribute("src","images/confessBear0.jpg");
+	img.setAttribute("alt", "Confession Bear 0");
+	var img1 = document.getElementById("img1");
+	img1.setAttribute("src","images/confessBear1.jpg");
+	img1.setAttribute("alt", "Confession Bear 1");
+	var img2 = document.getElementById("img2");
+	img2.setAttribute("src","images/confessBear2.jpg");
+	img2.setAttribute("alt", "Confession Bear 2");
 }
 
 function blink(){
 	
+	var div = document.getElementById("pictures");
+
+	var image = document.getElementById("memeImage");
+	image.setAttribute("src", "images/blinking.gif");
+
+	var links = ["confessBear", "blink", "doge", "exBrain", "feelsBad", "goodGuy", "dump", "think", "sponge", "troll", "puffin", "zerg"];
+
+	for(var i = 0; i < links.length; i++)
+	{
+		var link = document.getElementById(links[i]);
+		link.setAttribute("class", "");
+	}
+
+	var link = document.getElementById("blink");
+	link.setAttribute("class", "disableLink");	
 
 	document.getElementById("name").innerHTML = "Drew Scanlon";
 	document.getElementById("summary").innerHTML = "";
