@@ -35,32 +35,57 @@ function confessBear(){
 }
 
 function blink(){
-	
-	var div = document.getElementById("pictures");
 
 	var image = document.getElementById("memeImage");
 	image.setAttribute("src", "images/blinking.gif");
 
-	var links = ["confessBear", "blink", "doge", "exBrain", "feelsBad", "goodGuy", "dump", "think", "sponge", "troll", "puffin", "zerg"];
-
-	for(var i = 0; i < links.length; i++)
-	{
-		var link = document.getElementById(links[i]);
-		link.setAttribute("class", "");
-	}
-
-	var link = document.getElementById("blink");
-	link.setAttribute("class", "disableLink");	
-
 	document.getElementById("name").innerHTML = "Drew Scanlon";
-	document.getElementById("summary").innerHTML = "";
+	document.getElementById("summary").innerHTML = "Drew Scanlon is a GIF of Drew Scanlon, video editor and podcaster at video game website Giant Bomb. The GIF of Scanlon is used as a reaction image capturing feeling slightly insulted or confused.";
+	document.getElementById("creation").innerHTML = "The GIF comes from the GiantBomb video \“Unprofessional Fridays.\” Drew’s reaction comes when Jeff Gershman says \“Farming with my hoe” while playing a game. The GIF had been around for nearly two years, it was not until February 2017 that it spiked in popularity on Twitter. On February 5th, user @eksbl used it in a tweet describing his reaction in biology class, gaining nearly 50,000 retweets.";
+	document.getElementById("eco").innerHTML = "The meme is still common, but it is slowly phasing out, sell sell sell! The days of Drew Scanlon memes are over and will soon be declining.";
+
+	document.getElementById("memeTitle").innerHTML = "Drew Scanlon";
+	document.getElementById("memeBorn").innerHTML = "Born: February 5, 2017";
+	document.getElementById("memeUsed").innerHTML = "Usability: Stable";
+	document.getElementById("memeFreq").innerHTML = "Frequently used during: February 2017";
+	document.getElementById("memeOrigin").innerHTML = "Origin: Drew Scanlon July 27, 2015";
+
+	var img = document.getElementById("img0");
+	img.setAttribute("src","images/blink0.png");
+	img.setAttribute("alt", "Blinking Meme 0");
+	var img1 = document.getElementById("img1");	
+	img1.setAttribute("src","images/blinking1.png");
+	img1.setAttribute("alt", "Blinking Meme 1");
+	var img2 = document.getElementById("img2");
+	img2.setAttribute("src","images/blink2.png");
+	img2.setAttribute("alt", "Blinking Meme 2");
 }
 
 function doge(){
 	
+	var image = document.getElementById("memeImage");
+	image.setAttribute("src", "images/doge0.jpg");
 
 	document.getElementById("name").innerHTML = "Doge";
-	document.getElementById("summary").innerHTML = "";
+	document.getElementById("summary").innerHTML = "Doge is a slang term for \“dog\” that is primarily associated with pictures of Shiba Inus (nicknamed \“Shibe\”) and internal monologue captions on Tumblr. These photos may be photoshopped to change the dog’s face or captioned with interior monologues in Comic Sans font. Most memes with Doge uses short phrases that are purposefully incorrect. Such phrases start with words like, Wow!, Such, Much, and So.";
+	document.getElementById("creation").innerHTML = "On February 23rd, 2010, Japanese kindergarten teacher Atsuko Sato posted several photos of her rescue-adopted Shiba Inu dog Kabosu to her personal blog. Among the photos included a peculiar shot of Kabosu sitting on a couch while glaring sideways at the camera with raised eyebrows (shown on the image on the right).";
+	document.getElementById("eco").innerHTML = "Although always easily recognized, the Doge meme is a dead meme. It can be posted once in a while and will garner some upvotes, but will never return to its past upvote gains.";
+
+	document.getElementById("memeTitle").innerHTML = "Doge";
+	document.getElementById("memeBorn").innerHTML = "Born: June 2017";
+	document.getElementById("memeUsed").innerHTML = "Usability: Dead";
+	document.getElementById("memeFreq").innerHTML = "Frequently used during: December 2013";
+	document.getElementById("memeOrigin").innerHTML = "Origin: Atsuko Sato February 23, 2010";
+
+	var img = document.getElementById("img0");
+	img.setAttribute("src","images/doge.jpg");
+	img.setAttribute("alt", "Doge 0");
+	var img1 = document.getElementById("img1");	
+	img1.setAttribute("src","images/doge1.jpg");
+	img1.setAttribute("alt", "Doge 1");
+	var img2 = document.getElementById("img2");
+	img2.setAttribute("src","images/doge2.jpg");
+	img2.setAttribute("alt", "Doge 2");
 }
 
 function exBrain(){
