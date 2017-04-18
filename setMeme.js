@@ -4,6 +4,16 @@
     Author: Ednest Petario
     Date Created: April 16, 2017
 */
+
+function randomMeme(){
+	var memes = ["confessBear", "blink", "doge", "exBrain", "feelsBad", "goodGuy","dump","think","sponge","troll","puffin","zerg"];
+
+	var ranInt = Math.floor(Math.random() * 12);
+
+	localStorage.setItem("meme", memes[ranInt]);
+
+}
+
 function load() {
 	document.getElementById("confessBear").addEventListener("click", function(){localStorage.setItem("meme", "confessBear");}, false);
 	document.getElementById("blink").addEventListener("click", function(){localStorage.setItem("meme", "blink");}, false);
@@ -17,6 +27,7 @@ function load() {
 	document.getElementById("troll").addEventListener("click", function(){localStorage.setItem("meme", "troll");}, false);
 	document.getElementById("puffin").addEventListener("click", function(){localStorage.setItem("meme", "puffin");}, false);
 	document.getElementById("zerg").addEventListener("click", function(){localStorage.setItem("meme", "zerg");}, false);
+	document.getElementById("random").addEventListener("click", randomMeme, false);
 }
 
 
