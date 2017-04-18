@@ -144,6 +144,13 @@ footer ul li a:hover, footer ul li a:focus{
 	text-decoration: underline;
 }
 
+#feedImg{
+	float: right;
+	width: 250px;
+	height: 250px;
+	padding: 10px;
+}
+
 .bold{
 	font-weight: bolder;
 	text-decoration: underline;

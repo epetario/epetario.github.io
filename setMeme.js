@@ -28,6 +28,7 @@ function load() {
 	document.getElementById("puffin").addEventListener("click", function(){localStorage.setItem("meme", "puffin");}, false);
 	document.getElementById("zerg").addEventListener("click", function(){localStorage.setItem("meme", "zerg");}, false);
 	document.getElementById("random").addEventListener("click", randomMeme, false);
+	document.getElementById("footerRand").addEventListener("click", randomMeme, false);
 }
 
 
