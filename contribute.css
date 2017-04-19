@@ -148,7 +148,85 @@ footer ul li a:hover, footer ul li a:focus{
 	float: right;
 	width: 250px;
 	height: 250px;
-	padding: 10px;
+	margin-top: 40px;
+	margin-left: 10px;
+	border: 5px solid gold;
+	border-radius: 30px;
+}
+
+form{
+	margin-top: 20px;
+}
+
+form fieldset{
+	border-style: none;
+}
+
+form legend{
+	font-weight: bold;
+	font-size: 20px;
+}
+
+form label{
+	display: inline-block;
+	margin-left: 35%;
+	width: 70px;
+	margin-top: 20px;
+}
+
+#lblFeed{
+	margin-top: 30px;
+	width: 100%;
+}
+
+#submit{
+	float:left;
+	margin-left: 35%;
+	margin-top: 30px;
+}
+
+#clear{
+	margin-top: 93px;
+	float: right;
+	margin-right: 20%;
+}
+
+.error{
+	margin-left: 35%;
+	color: red;
+}
+
+form input{
+	box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border: 1px solid #C2C2C2;
+    box-shadow: 1px 1px 4px #EBEBEB;
+    -moz-box-shadow: 1px 1px 4px #EBEBEB;
+    -webkit-box-shadow: 1px 1px 4px #EBEBEB;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    padding: 7px;
+    outline: none;
+}
+
+form textarea{
+	margin-left: 40%;
+	box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border: 1px solid #C2C2C2;
+    box-shadow: 1px 1px 4px #EBEBEB;
+    -moz-box-shadow: 1px 1px 4px #EBEBEB;
+    -webkit-box-shadow: 1px 1px 4px #EBEBEB;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    padding: 7px;
+    outline: none;
+    width: 230px;
+    resize: none;
 }
 
 .bold{
@@ -158,4 +236,9 @@ footer ul li a:hover, footer ul li a:focus{
 
 .red{
 	color: red;
+}
+
+.focus{
+	color: white;
+	background-color: #e86868;
 }
