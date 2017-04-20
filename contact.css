@@ -9,7 +9,7 @@ html{
 
 body{
 	margin: 0px auto;
-	font-family: "Comic Sans MS", cursive;
+	font-family: 'Pangolin', sans-serif;
 	background-color: lightgray;
 }
 
@@ -151,4 +151,20 @@ footer ul li a:hover, footer ul li a:focus{
 
 .red{
 	color: red;
+}
+
+#pLine{
+	margin-bottom: 30px;
+}
+
+#content ul li{
+	margin-top: 10px;
+	list-style: none;
+}
+
+#map{
+	width: 45%;
+	height: 200px;
+	float: right;
+	margin-left: 20px;
 }
