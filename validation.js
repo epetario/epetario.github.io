@@ -1,6 +1,14 @@
-function focusElement(){
+/*
+    Script name: validation.js
+    Description: Used to validate the contents of the contribute.html page form inputs
+    Author: Ednest Petario
+    Date Created: April 17, 2017
+*/
 
-	// var x = document.activeElement.id
+/*
+	Assigns focus to the currently selected input
+*/
+function focusElement(){
 
 	if("name" == document.activeElement.id)
 	{
@@ -72,11 +80,6 @@ function focusElement(){
 		var feedback = document.getElementById("feedback");
 		feedback.setAttribute("class", "");
 	}
-
-
-	// var field = document.getElementById(x);
-
- // 	field.setAttribute("class", "focus");
 }
 
 /*
@@ -170,7 +173,7 @@ function formFieldHasInput(fieldElement){
 }
 
 /*
- * Handles the submit event of the survey form
+ * Handles the submit event of the contribute form
  *
  * param e  A reference to the event object
  * return   True if no validation errors; False if the form has
@@ -193,7 +196,9 @@ function validate(e){
 	}
 }
 
-
+/*
+    Handles the reset event of the form
+*/
 function resetForm(e){
 
 	// Confirm that the user wants to reset the form.
@@ -251,7 +256,5 @@ function load(){
 	document.getElementById("body").addEventListener("click", focusElement, false);
 }
 
-
-
-
+//Used to check if the html has fully loaded
 document.addEventListener("DOMContentLoaded", load, false);

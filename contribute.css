@@ -111,10 +111,8 @@ nav ul li a:hover, nav ul li a:focus{
 
 footer{
 	clear:both;
-	padding-top: 30px;
-	margin-left: 35%;
-	position: absolute;
-	bottom: 0;
+	float:right;
+	margin-right: 35%;
 }
 
 footer ul li{
@@ -171,8 +169,8 @@ form legend{
 
 form label{
 	display: inline-block;
-	margin-left: 35%;
-	width: 70px;
+	margin-left: 33%;
+	width: 80px;
 	margin-top: 20px;
 }
 
@@ -183,18 +181,18 @@ form label{
 
 #submit{
 	float:left;
-	margin-left: 35%;
+	margin-left: 33%;
 	margin-top: 30px;
 }
 
 #clear{
-	margin-top: 93px;
 	float: right;
+	margin-top: 30px;
 	margin-right: 20%;
 }
 
 .error{
-	margin-left: 35%;
+	margin-left: 33%;
 	color: red;
 }
 
@@ -214,7 +212,7 @@ form input{
 }
 
 form textarea{
-	margin-left: 40%;
+	margin-left: 44%;
 	box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -227,7 +225,7 @@ form textarea{
     -moz-border-radius: 3px;
     padding: 7px;
     outline: none;
-    width: 230px;
+    width: 250px;
     resize: none;
 }
 

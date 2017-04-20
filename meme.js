@@ -5,7 +5,9 @@
     Date Created: April 16, 2017
 */
 
-
+/*
+	Edits the html page to suit the confession bear meme
+*/
 function confessBear(){
 
 	var image = document.getElementById("memeImage");
@@ -34,6 +36,9 @@ function confessBear(){
 	img2.setAttribute("alt", "Confession Bear 2");
 }
 
+/*
+	Edits the html page to suit the drew scanlon meme
+*/
 function blink(){
 
 	var image = document.getElementById("memeImage");
@@ -61,6 +66,9 @@ function blink(){
 	img2.setAttribute("alt", "Blinking Meme 2");
 }
 
+/*
+	Edits the html page to suit the doge meme
+*/
 function doge(){
 	
 	var image = document.getElementById("memeImage");
@@ -88,6 +96,9 @@ function doge(){
 	img2.setAttribute("alt", "Doge 2");
 }
 
+/*
+	Edits the html page to suit the expanding brain meme
+*/
 function exBrain(){
 	
 	var image = document.getElementById("memeImage");
@@ -115,6 +126,9 @@ function exBrain(){
 	img2.setAttribute("alt", "Brain 2");
 }
 
+/*
+	Edits the html page to suit the feelsbadman meme
+*/
 function feelsBad(){
 	
 	var image = document.getElementById("memeImage");
@@ -142,6 +156,9 @@ function feelsBad(){
 	img2.setAttribute("alt", "FeelsBadMan 2");
 }
 
+/*
+	Edits the html page to suit the good guy greg meme
+*/
 function goodGuy(){
 	
 	var image = document.getElementById("memeImage");
@@ -169,6 +186,9 @@ function goodGuy(){
 	img2.setAttribute("alt", "GoodGuyGreg 2");
 }
 
+/*
+	Edits the html page to suit the meme dumps meme page
+*/
 function dump(){
 	
 	var image = document.getElementById("memeImage");
@@ -196,6 +216,9 @@ function dump(){
 	img2.setAttribute("alt", "Dump 2");
 }
 
+/*
+	Edits the html page to suit the roll safe meme
+*/
 function think(){
 	
 	var image = document.getElementById("memeImage");
@@ -223,6 +246,9 @@ function think(){
 	img2.setAttribute("alt", "Thinking 2");
 }
 
+/*
+	Edits the html page to suit the spongebob meme
+*/
 function sponge(){
 	
 	var image = document.getElementById("memeImage");
@@ -250,6 +276,9 @@ function sponge(){
 	img2.setAttribute("alt", "Sponge 2");
 }
 
+/*
+	Edits the html page to suit the trollface meme
+*/
 function troll(){
 	
 	var image = document.getElementById("memeImage");
@@ -277,6 +306,9 @@ function troll(){
 	img2.setAttribute("alt", "Troll 2");
 }
 
+/*
+	Edits the html page to suit the unpopular opinion puffin meme
+*/
 function puffin(){
 
 	var image = document.getElementById("memeImage");
@@ -304,6 +336,9 @@ function puffin(){
 	img2.setAttribute("alt", "Puffin 2");
 }
 
+/*
+	Edits the html page to suit the zerg rush meme
+*/
 function zerg(){
 	
 	var image = document.getElementById("memeImage");
@@ -331,6 +366,9 @@ function zerg(){
 	img2.setAttribute("alt", "Dump 2");
 }
 
+/*
+	From an array of all the memes available on the site, using a random int, set the meme to that name
+*/
 function randomMeme(){
 	var memes = ["confessBear", "blink", "doge", "exBrain", "feelsBad", "goodGuy","dump","think","sponge","troll","puffin","zerg"];
 
@@ -342,22 +380,12 @@ function randomMeme(){
 	window[x]();
 }
 
+/*
+	Adds all the event listeners for all the links in the html
+*/
 function load() {
 	var x = localStorage.getItem("meme");
 	window[x]();
-
-	// document.getElementById("confessBear").addEventListener("click", confessBear, false);
-	// document.getElementById("blink").addEventListener("click", blink, false);
-	// document.getElementById("doge").addEventListener("click", doge, false);
-	// document.getElementById("exBrain").addEventListener("click", exBrain, false);
-	// document.getElementById("feelsBad").addEventListener("click", feelsBad, false);
-	// document.getElementById("goodGuy").addEventListener("click", goodGuy, false);
-	// document.getElementById("dump").addEventListener("click", dump, false);
-	// document.getElementById("think").addEventListener("click", think, false);
-	// document.getElementById("sponge").addEventListener("click", sponge, false);
-	// document.getElementById("troll").addEventListener("click", troll, false);
-	// document.getElementById("puffin").addEventListener("click", puffin, false);
-	// document.getElementById("zerg").addEventListener("click", zerg, false);
 
 	document.getElementById("confessBear").addEventListener("click", function(){localStorage.setItem("meme", "confessBear");var x = localStorage.getItem("meme");window[x]();}, false);
 	document.getElementById("blink").addEventListener("click", function(){localStorage.setItem("meme", "blink");var x = localStorage.getItem("meme");window[x]();}, false);
@@ -375,5 +403,5 @@ function load() {
 	document.getElementById("footerRand").addEventListener("click", randomMeme, false);
 }
 
-
+// Checks if the dom has fully loaded
 document.addEventListener("DOMContentLoaded", load, false);

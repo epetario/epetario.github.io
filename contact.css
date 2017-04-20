@@ -111,10 +111,9 @@ nav ul li a:hover, nav ul li a:focus{
 
 footer{
 	clear:both;
-	padding-top: 30px;
-	margin-left: 35%;
-	position: absolute;
-	bottom: 0;
+	float:right;
+	margin-right: 35%;
+
 }
 
 footer ul li{
